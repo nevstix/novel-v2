@@ -1,0 +1,242 @@
+/* ===========================
+   CERITAKU - HOME.CSS
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 20px;
+    background:#2563eb;
+    color:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#fff;
+    object-fit:cover;
+}
+
+.logo-area h2{
+    font-size:22px;
+    font-weight:700;
+}
+
+.header-menu{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.header-menu button,
+.profile{
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+/* ===========================
+   BANNER
+=========================== */
+
+.banner{
+    background:linear-gradient(135deg,#2563eb,#4f8dfd);
+    color:#fff;
+    margin:20px;
+    padding:30px 25px;
+    border-radius:20px;
+    animation:fadeDown .6s;
+}
+
+.banner h1{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.banner p{
+    line-height:1.6;
+}
+
+/* ===========================
+   SEARCH
+=========================== */
+
+.search-box{
+    margin:20px;
+}
+
+.search-box input{
+    width:100%;
+    padding:14px 18px;
+    border:none;
+    border-radius:14px;
+    outline:none;
+    background:#fff;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    font-size:15px;
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.title{
+    margin:0 20px 15px;
+}
+
+.title h2{
+    color:#2563eb;
+}
+
+/* ===========================
+   NOVEL CARD
+=========================== */
+
+#novelContainer{
+    padding:0 20px 90px;
+}
+
+.novel-card{
+    background:#fff;
+    border-radius:18px;
+    padding:18px;
+    margin-bottom:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.novel-card:hover{
+    transform:translateY(-5px);
+}
+
+.novel-card h2{
+    color:#2563eb;
+    margin-bottom:8px;
+}
+
+.novel-card p{
+    color:#666;
+    margin:6px 0;
+    line-height:1.5;
+}
+
+.novel-card small{
+    color:#999;
+}
+
+/* ===========================
+   EMPTY
+=========================== */
+
+.empty{
+    text-align:center;
+    margin-top:60px;
+    color:#888;
+}
+
+.empty i{
+    font-size:65px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.empty h3{
+    margin-bottom:10px;
+}
+
+/* ===========================
+   FLOATING BUTTON
+=========================== */
+
+.write-btn{
+    position:fixed;
+    right:20px;
+    bottom:25px;
+    width:60px;
+    height:60px;
+    background:#2563eb;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(37,99,235,.35);
+    transition:.3s;
+}
+
+.write-btn:hover{
+    transform:scale(1.08);
+}
+
+/* ===========================
+   ANIMATION
+=========================== */
+
+@keyframes fadeDown{
+
+    from{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .banner h1{
+        font-size:22px;
+    }
+
+    .logo-area h2{
+        font-size:20px;
+    }
+
+    .write-btn{
+        width:55px;
+        height:55px;
+    }
+
+}

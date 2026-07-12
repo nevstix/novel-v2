@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mode Penulis - Ceritaku</title>
+
+<link rel="stylesheet" href="writer.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<a href="home.html" class="back">
+<i class="fa-solid fa-arrow-left"></i>
+</a>
+
+<h2>Mode Penulis</h2>
+
+</header>
+
+<div class="container">
+
+<h1>Tulis Novel Baru</h1>
+
+<p>Bagikan imajinasimu kepada para pembaca.</p>
+
+<form id="writerForm">
+
+<input
+type="text"
+id="judul"
+placeholder="Judul Novel"
+required>
+
+<input
+type="text"
+id="genre"
+placeholder="Genre">
+
+<textarea
+id="sinopsis"
+rows="4"
+placeholder="Sinopsis"></textarea>
+
+<textarea
+id="isiNovel"
+rows="12"
+placeholder="Mulai menulis Bab 1..."
+required></textarea>
+
+<div class="upload">
+
+<label for="cover">
+
+<i class="fa-solid fa-image"></i>
+
+Pilih Cover Novel
+
+</label>
+
+<input
+type="file"
+id="cover"
+accept="image/*">
+
+</div>
+
+<div class="button-group">
+
+<button type="button" id="draftBtn">
+
+<i class="fa-solid fa-floppy-disk"></i>
+
+Simpan Draft
+
+</button>
+
+<button type="submit" id="publishBtn">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+Terbitkan
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+<script src="writer.js"></script>
+
+</body>
+</html>

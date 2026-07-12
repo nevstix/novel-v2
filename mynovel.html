@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Novel Saya - Ceritaku</title>
+
+<link rel="stylesheet" href="mynovel.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<a href="profile.html">
+<i class="fa-solid fa-arrow-left"></i>
+</a>
+
+<h2>Novel Saya</h2>
+
+</header>
+
+<section class="hero">
+
+<h1>Koleksi Novel</h1>
+
+<p>Semua novel yang telah kamu terbitkan akan muncul di sini.</p>
+
+</section>
+
+<!-- Pencarian -->
+
+<section class="top-menu">
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+id="searchNovel"
+placeholder="Cari novel saya...">
+
+</div>
+
+<div class="filter">
+
+<select id="filterNovel">
+
+<option value="all">Semua Novel</option>
+
+<option value="draft">Draft</option>
+
+<option value="published">Diterbitkan</option>
+
+</select>
+
+</div>
+
+</section>
+
+<!-- Daftar Novel -->
+
+<section id="novelList" class="novel-list">
+
+<div class="empty">
+
+<i class="fa-solid fa-book-open"></i>
+
+<h3>Belum Ada Novel</h3>
+
+<p>Silakan terbitkan novel pertamamu.</p>
+
+</div>
+
+</section>
+
+<!-- Tombol Tambah -->
+
+<a href="writer.html" class="floating-btn">
+
+<i class="fa-solid fa-plus"></i>
+
+</a>
+
+<!-- Popup -->
+
+<div class="popup" id="popup">
+
+<div class="popup-box">
+
+<i id="popupIcon" class="fa-solid fa-circle-question popup-icon"></i>
+
+<h2 id="popupTitle">Konfirmasi</h2>
+
+<p id="popupText"></p>
+
+<div class="popup-button">
+
+<button id="cancelBtn">Batal</button>
+
+<button id="okBtn">Lanjut</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="mynovel.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+/* ===========================
+   LOGIN - CERITAKU
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#eef5ff,#dbeafe,#f8fbff);
+    padding:20px;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    width:100%;
+    max-width:420px;
+    background:#ffffff;
+    border-radius:30px;
+    padding:40px 30px;
+    text-align:center;
+    box-shadow:0 20px 40px rgba(0,0,0,.10);
+    animation:fadeUp .7s ease;
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.login-box h1{
+    color:#2563eb;
+    font-size:36px;
+    margin-bottom:8px;
+}
+
+.login-box p{
+    color:#64748b;
+    margin-bottom:30px;
+}
+
+/* ===========================
+   INPUT
+=========================== */
+
+.input-box{
+    display:flex;
+    align-items:center;
+    background:#f8fafc;
+    border:2px solid #dbeafe;
+    border-radius:15px;
+    padding:15px;
+    margin-bottom:18px;
+    transition:.3s;
+}
+
+.input-box:focus-within{
+    border-color:#2563eb;
+}
+
+.input-box i{
+    color:#2563eb;
+    margin-right:12px;
+    font-size:18px;
+}
+
+.input-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+    font-size:15px;
+}
+/* ===========================
+   TOMBOL
+=========================== */
+
+.login-box button{
+    width:100%;
+    border:none;
+    border-radius:15px;
+    padding:15px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    margin-top:12px;
+}
+
+/* Tombol Masuk */
+
+button[type="submit"]{
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+    color:#ffffff;
+    box-shadow:0 10px 20px rgba(37,99,235,.25);
+}
+
+button[type="submit"]:hover{
+    transform:translateY(-3px);
+}
+
+/* Tombol Guest */
+
+#guestBtn{
+    background:#ffffff;
+    color:#2563eb;
+    border:2px solid #2563eb;
+}
+
+#guestBtn:hover{
+    background:#2563eb;
+    color:#ffffff;
+}
+
+/* Tombol Kembali */
+
+#backBtn{
+    background:#ef4444;
+    color:#ffffff;
+}
+
+#backBtn:hover{
+    background:#dc2626;
+}
+
+/* ===========================
+   LINK DAFTAR
+=========================== */
+
+.menu{
+    margin-top:25px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#2563eb;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#1d4ed8;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:600px){
+
+    .login-box{
+        padding:30px 22px;
+    }
+
+    .login-box h1{
+        font-size:30px;
+    }
+
+    .logo{
+        width:90px;
+        height:90px;
+    }
+
+}
+
+/* ===========================
+   ANIMASI
+=========================== */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+.guest-btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    text-decoration:none;
+}

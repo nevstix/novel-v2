@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Edit Novel - Ceritaku</title>
+
+<link rel="stylesheet" href="editnovel.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<a href="mynovel.html">
+<i class="fa-solid fa-arrow-left"></i>
+</a>
+
+<h2>Edit Novel</h2>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h1>Edit Novel</h1>
+
+<p>Perbarui isi novel sebelum diterbitkan kembali.</p>
+
+<form id="editForm">
+
+<input
+type="text"
+id="judul"
+placeholder="Judul Novel"
+required>
+
+<input
+type="text"
+id="genre"
+placeholder="Genre"
+required>
+
+<textarea
+id="sinopsis"
+rows="4"
+placeholder="Sinopsis Novel"
+required></textarea>
+
+<textarea
+id="isiNovel"
+rows="12"
+placeholder="Isi Novel"
+required></textarea>
+
+<div class="button-group">
+
+<button type="submit" class="saveBtn">
+
+<i class="fa-solid fa-floppy-disk"></i>
+
+Simpan Perubahan
+
+</button>
+
+<a href="mynovel.html" class="cancelBtn">
+
+Batal
+
+</a>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="editnovel.js"></script>
+
+</body>
+</html>

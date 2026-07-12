@@ -1,0 +1,183 @@
+/* ===========================
+   REGISTER - CERITAKU
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#eef5ff,#dbeafe,#f8fbff);
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.register-box{
+    width:100%;
+    max-width:450px;
+    background:#ffffff;
+    border-radius:30px;
+    padding:40px 30px;
+    text-align:center;
+    box-shadow:0 20px 40px rgba(0,0,0,.10);
+    animation:fadeUp .7s ease;
+}
+
+.logo{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.register-box h1{
+    color:#2563eb;
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.register-box p{
+    color:#64748b;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+/* ===========================
+   INPUT
+=========================== */
+
+.input-box{
+    display:flex;
+    align-items:center;
+    background:#f8fafc;
+    border:2px solid #dbeafe;
+    border-radius:15px;
+    padding:15px;
+    margin-bottom:18px;
+    transition:.3s;
+}
+
+.input-box:focus-within{
+    border-color:#2563eb;
+}
+
+.input-box i{
+    color:#2563eb;
+    margin-right:12px;
+    font-size:18px;
+}
+
+.input-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+    font-size:15px;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+button{
+    width:100%;
+    border:none;
+    border-radius:15px;
+    padding:15px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+    margin-top:12px;
+}
+
+button[type="submit"]{
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+    color:#ffffff;
+}
+
+button[type="submit"]:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(37,99,235,.25);
+}
+
+#backBtn{
+    background:#ef4444;
+    color:#ffffff;
+}
+
+#backBtn:hover{
+    background:#dc2626;
+}
+
+/* ===========================
+   LINK LOGIN
+=========================== */
+
+.menu{
+    margin-top:25px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:500;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#1d4ed8;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:600px){
+
+    .register-box{
+        padding:30px 22px;
+    }
+
+    .register-box h1{
+        font-size:30px;
+    }
+
+    .logo{
+        width:90px;
+        height:90px;
+    }
+
+}
+
+/* ===========================
+   ANIMASI
+=========================== */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}

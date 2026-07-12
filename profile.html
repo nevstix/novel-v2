@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profil - Ceritaku</title>
+
+<link rel="stylesheet" href="profile.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<a href="home.html" class="back">
+<i class="fa-solid fa-arrow-left"></i>
+</a>
+
+<h2>Profil Saya</h2>
+
+</header>
+
+<section class="profile-card">
+
+<img src="aset/profile.png" class="profile-img">
+
+<h2 id="username">Pengguna Ceritaku</h2>
+
+<p id="email">user@email.com</p>
+
+<button class="edit-btn" id="editBtn">
+
+<i class="fa-solid fa-pen"></i>
+
+Edit Profil
+
+</button>
+
+</section>
+
+<section class="statistik">
+
+<div class="card">
+
+<h3 id="novelCount">0</h3>
+
+<p>Novel</p>
+
+</div>
+
+<div class="card">
+
+<h3>0</h3>
+
+<p>Pengikut</p>
+
+</div>
+
+<div class="card">
+
+<h3>0</h3>
+
+<p>Mengikuti</p>
+
+</div>
+
+</section>
+
+<section class="menu">
+
+<div class="menu-item" id="myNovelBtn">
+
+<div>
+
+<i class="fa-solid fa-book"></i>
+
+<span>Novel Saya</span>
+
+</div>
+
+<i class="fa-solid fa-chevron-right"></i>
+
+</div>
+
+<div class="menu-item" id="savedBtn">
+
+<div>
+
+<i class="fa-solid fa-bookmark"></i>
+
+<span>Novel Tersimpan</span>
+
+</div>
+
+<i class="fa-solid fa-chevron-right"></i>
+
+</div>
+
+<div class="menu-item" id="settingBtn">
+
+<div>
+
+<i class="fa-solid fa-gear"></i>
+
+<span>Pengaturan</span>
+
+</div>
+
+<i class="fa-solid fa-chevron-right"></i>
+
+</div>
+
+<div class="menu-item logout" id="logoutBtn">
+
+<div>
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+<span>Keluar</span>
+
+</div>
+
+<i class="fa-solid fa-chevron-right"></i>
+
+</div>
+
+</section>
+
+<!-- POPUP -->
+
+<div class="popup" id="popup">
+
+<div class="popup-box">
+
+<i class="fa-solid fa-circle-info popup-icon"></i>
+
+<h2 id="popupTitle">Informasi</h2>
+
+<p id="popupText"></p>
+
+<button id="closePopup">Tutup</button>
+
+</div>
+
+</div>
+
+<script src="profile.js"></script>
+
+</body>
+
+</html>

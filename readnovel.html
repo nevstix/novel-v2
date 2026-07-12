@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Baca Novel - Ceritaku</title>
+
+<link rel="stylesheet" href="readnovel.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<a href="javascript:history.back()" class="back">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+</a>
+
+<h2>Baca Novel</h2>
+
+</header>
+
+<section class="cover-section">
+
+<img id="coverNovel" src="aset/default-cover.jpg" alt="Cover Novel">
+
+</section>
+
+<section class="content">
+
+<h1 id="judulNovel">Judul Novel</h1>
+
+<p class="genre">
+<i class="fa-solid fa-book"></i>
+<span id="genreNovel">Drama</span>
+</p>
+
+<p class="penulis">
+<i class="fa-solid fa-user"></i>
+<span id="penulisNovel">Penulis</span>
+</p>
+
+<div class="sinopsis">
+
+<h3>Sinopsis</h3>
+
+<p id="sinopsisNovel">
+Sinopsis novel...
+</p>
+
+</div>
+
+<div class="isi">
+
+<h3>Bab 1</h3>
+
+<p id="isiNovel">
+Isi novel akan muncul di sini...
+</p>
+
+</div>
+
+</section>
+
+<section class="action">
+
+<button id="likeBtn">
+
+<i class="fa-solid fa-heart"></i>
+
+Suka
+
+</button>
+
+<button id="saveBtn">
+
+<i class="fa-solid fa-bookmark"></i>
+
+Simpan
+
+</button>
+
+<button id="shareBtn">
+
+<i class="fa-solid fa-share"></i>
+
+Bagikan
+
+</button>
+
+</section>
+
+<section class="comment">
+
+<h3>
+
+<i class="fa-solid fa-comments"></i>
+
+Komentar
+
+</h3>
+
+<div id="commentList">
+
+<p class="empty">
+
+Belum ada komentar.
+
+</p>
+
+</div>
+
+<textarea
+id="commentInput"
+placeholder="Tulis komentar..."></textarea>
+
+<button id="sendComment">
+
+Kirim Komentar
+
+</button>
+
+</section>
+
+<script src="readnovel.js"></script>
+
+</body>
+
+</html>
